@@ -1,1 +1,19 @@
+body{
+  background-color: black;
+  text-align: center;
+  margin-top: 6vw;
+}
+.edit{
+  color: white;
+  font-family: 'Lexend Mega', sans-serif;
+  font-size: 5vw;
+  margin: 0.5vw auto;
+  transition: 2s ease-in;
+}
 
+.leftmove{
+  transform: translateX(-10vw);
+}
+.rightmove{
+    transform: translateX(10vw);
+}
