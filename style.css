@@ -179,9 +179,22 @@ height: 550px;
   opacity: 0;
   font-size: 50px;
 }
-
+.small-dash{
+  height: 1px;
+  width: 60px;
+  margin: auto;
+  border-top: 4px solid black;
+  border-bottom: none;
+  opacity: 0;
+}
 .for-all{
-  animation: appear 2s linear both;
+  animation: appear 0.75s ease both;
+}
+.fix{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 /* tester */
 .white{
