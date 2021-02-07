@@ -1,14 +1,8 @@
-firstLine = document.querySelectorAll('.left')[0];
-secondLine = document.querySelectorAll('.right')[0];
-thirdLine = document.querySelectorAll('.left')[1];
-fourthLine = document.querySelectorAll('.right')[1];
+let about=document.querySelector('.about-text');
+setInterval(mf,100);
 
-if (screen.width>800) {
-  setInterval(left, 1000);
-  function left(){
-    firstLine.classList.add('leftmove');
-    thirdLine.classList.add('leftmove');
-    secondLine.classList.add('rightmove');
-    fourthLine.classList.add('rightmove');
+function mf() {
+  if (document.documentElement.scrollTop>=110) {
+    about.classList.add("for-all");
   }
 }
