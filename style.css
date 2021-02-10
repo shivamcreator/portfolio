@@ -280,7 +280,18 @@ color: white;
   color: #30475e;
    opacity: 0;
 }
-
+.progress-div{
+ display: flex;
+ justify-content: center;
+ background-color: white;
+ padding-top: 80px;
+}
+.progress-bar{
+  height: 20px;
+  width: 350px;
+  background-color:#dddddd;
+  border-radius: 3px;
+}
 
 /* tester */
 .white{
