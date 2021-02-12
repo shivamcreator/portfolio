@@ -1,7 +1,10 @@
 let about=document.querySelector('.about-text');
+let project=document.querySelector('.projectText');
 let dash= document.querySelector('.small-dash');
+let dash2= document.querySelectorAll('.small-dash')[1];
 let nav = document.querySelector('.upper-nav');
-let fix= nav.offsetTop;
+let fix= nav.offsetTop+110;
+let startContact =document.querySelector('.startContact');
 let h1 = document.querySelector('.h1');
 let h2 = document.querySelector('.h2');
 let h3 = document.querySelector('.h3');
@@ -57,6 +60,11 @@ function mf() {
     setTimeout(load7,1350);
     setTimeout(load8,1450);
   }
+  if(document.documentElement.scrollTop>=1150){
+    project.classList.add("for-all3");
+  }if (document.documentElement.scrollTop>=1220) {
+    dash2.classList.add("for-all3");
+  }
   if(window.pageYOffset > fix){
     nav.classList.add("fix");
   }else{
@@ -87,3 +95,12 @@ function load6() {
 function load7() {
  p7.style.width = (450*40)/100 + 'px';
 }
+
+startContact.addEventListener("mouseover",function () {
+  startContact.style.backgroundColor=  "#99f3bd";
+ startContact.style.color=  "#1a1c20";
+});
+startContact.addEventListener("mouseout",function () {
+  startContact.style.backgroundColor=  "#1a1c20";
+ startContact.style.color=  "#99f3bd";
+});
