@@ -63,7 +63,7 @@ height: 550px;
   padding: 8px;
   font-size: 30px;
  color:  #99f3bd;
- background: none;
+ background:none;
  border: 1px solid #99f3bd;
 }
 
@@ -381,6 +381,22 @@ opacity: 0;
   transition: 1s;
 }
 
+
+
+/* projects */
+.projects{
+  background-color: #f6f6f6;
+  height: 1000px;
+  width: 1440px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.projectText{
+  padding-top: 75px;
+  margin: 0;
+  opacity: 0;
+  font-size: 50px;
+}
 /* tester */
 .white{
   height: 10000px;
