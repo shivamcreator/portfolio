@@ -3,7 +3,13 @@ let project=document.querySelector('.projectText');
 let dash= document.querySelector('.small-dash');
 let dash2= document.querySelectorAll('.small-dash')[1];
 let nav = document.querySelector('.upper-nav');
-let fix= nav.offsetTop+110;
+let fix= nav.offsetTop;
+let image= document.querySelector('.Image');
+let homeGlow= document.querySelector('.homeGlow');
+let aboutGlow= document.querySelector('.aboutGlow');
+let projectsGlow= document.querySelector('.projectsGlow');
+let profilesGlow= document.querySelector('.profilesGlow');
+let contactGlow= document.querySelector('.contactGlow');
 let startContact =document.querySelector('.startContact');
 let h1 = document.querySelector('.h1');
 let h2 = document.querySelector('.h2');
@@ -27,8 +33,15 @@ let ap3= document.querySelector('.ap3');
 let ap4= document.querySelector('.ap4');
 let progressDiv = document.querySelector('.progress-div');
 window.onscroll = function() {mf()};
-
+if (document.documentElement.scrollTop>=0) {
+  homeGlow.style.color="#1a1c20";
+}
 function mf() {
+  if (document.documentElement.scrollTop>=0) {
+    homeGlow.style.color="#1a1c20";
+    aboutGlow.style.color="white";
+  }
+
   if (document.documentElement.scrollTop>=320) {
     about.classList.add("for-all");
 
@@ -39,7 +52,9 @@ function mf() {
     h1.classList.add("for-all1");
     h2.classList.add("for-all1");
     h3.classList.add("for-all1");
-    h4.classList.add("for-all1");}
+    h4.classList.add("for-all1");``
+  }
+
     if(document.documentElement.scrollTop>=600){
     aboutheading1.classList.add("for-all2");
     aboutheading2.classList.add("for-all2");
@@ -49,7 +64,13 @@ function mf() {
     ap2.classList.add("for-all2");
     ap3.classList.add("for-all2");
     ap4.classList.add("for-all2");
-  }if(document.documentElement.scrollTop>=750){
+  }if(document.documentElement.scrollTop>=650){
+        homeGlow.style.color="white";
+        aboutGlow.style.color="#1a1c20";
+        projectsGlow.style.color="white";
+}
+        if(document.documentElement.scrollTop>=750){
+          image.classList.add("for-all");
     progressDiv.classList.add("for-all3");
     setTimeout(load,750);
     setTimeout(load2,850);
@@ -62,8 +83,12 @@ function mf() {
   }
   if(document.documentElement.scrollTop>=1150){
     project.classList.add("for-all3");
-  }if (document.documentElement.scrollTop>=1220) {
+  }if (document.documentElement.scrollTop>=1300) {
     dash2.classList.add("for-all3");
+  }
+  if (document.documentElement.scrollTop>=1500) {
+      aboutGlow.style.color="white";
+       projectsGlow.style.color="#1a1c20";
   }
   if(window.pageYOffset > fix){
     nav.classList.add("fix");
@@ -104,3 +129,9 @@ startContact.addEventListener("mouseout",function () {
   startContact.style.backgroundColor=  "#1a1c20";
  startContact.style.color=  "#99f3bd";
 });
+
+//
+// if (window.innerWidth<=450) {
+//   image.style.display="block";
+//    document.querySelector('body').backgroundColor="black";
+// }
