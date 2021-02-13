@@ -7,7 +7,7 @@ body{
   font-family: 'Poppins', sans-serif;
 color: #fff;
 text-align: left;
-height: 550px;
+height: 553px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,6 +175,7 @@ height: 550px;
   margin-right: 30px;
   font-size: 17px;
   color: #fff;
+  transition: color ease-in 0.15s;
 }
 .fst-item{
  margin-left: 14vw;
@@ -219,10 +220,11 @@ height: 550px;
 }
 .hex{
 display: inline-flex;
-margin: 60px 20px 0;
 position: relative;
 height: 230px;
 justify-content: center;
+padding: 0 20px;
+  margin: 60px 45px 0;
 width: 200px;
 color: white;
 }
@@ -286,12 +288,36 @@ color: white;
   color: #30475e;
    opacity: 0;
 }
+.aboutSecondLine{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 .progress-div{
   text-align: center;
  background-color: white;
- padding: 80px 0;
  margin: auto;
+ margin-top: 100px;
+ margin-bottom: 100px;
+ margin-left: 50px;
 opacity: 0;
+display: inline-block;
+}
+.Image{
+  display: inline-block;
+  background-color: #aaaaaa;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+ opacity: 0;
+ margin-top: 10px;
+ margin-bottom: 100px;
+}
+.Image p{
+  line-height: 10px;
+}
+.Image img{
+  height: 250px;
 }
 .progress-bar{
   height: 30px;
@@ -382,17 +408,16 @@ opacity: 0;
 }
 
 
-
 /* projects */
 .projects{
   background-color: #f6f6f6;
   height: 1000px;
-  width: 1440px;
+  width: 812px;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
 .projectText{
-  padding-top: 75px;
+  padding-top: 105px;
   margin: 0;
   opacity: 0;
   font-size: 50px;
