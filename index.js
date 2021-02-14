@@ -129,9 +129,3 @@ startContact.addEventListener("mouseout",function () {
   startContact.style.backgroundColor=  "#1a1c20";
  startContact.style.color=  "#99f3bd";
 });
-
-//
-// if (window.innerWidth<=450) {
-//   image.style.display="block";
-//    document.querySelector('body').backgroundColor="black";
-// }
