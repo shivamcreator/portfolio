@@ -406,8 +406,6 @@ display: inline-block;
   width: 0;
   transition: 1s;
 }
-
-
 /* projects */
 .projects{
   background-color: #f6f6f6;
@@ -421,10 +419,4 @@ display: inline-block;
   margin: 0;
   opacity: 0;
   font-size: 50px;
-}
-/* tester */
-.white{
-  height: 10000px;
-  width: 812px;
-  background-color: white;
 }
