@@ -1,17 +1,18 @@
 body{
-  background-color: #1a1c20;
+  background-color: #000;
    margin:0;
 }
 
 .parallax{
   font-family: 'Poppins', sans-serif;
 color: #fff;
+background-image: url("https://cdn.statically.io/img/i.pinimg.com/originals/00/e5/19/00e519672a5160a6f48b4b8962f78027.jpg");
 text-align: left;
-height: 553px;
+height: 555px;
   background-attachment: fixed;
-  background-position: center;
+  background-position:   top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:contain;
 }
 .color{
   color: #99f3bd;
@@ -76,21 +77,21 @@ height: 553px;
 .t{
   left: 50px;
   top: 5vw;
-  animation: in 5s ease-in both;
+  animation: in 1s ease-in both;
 }
 .t1{
   right: 20%;
-  animation: in 7s ease-in both;
+  animation: in 2s ease-in both;
 }
 .t2{
   left: 50px;
   top: 35vw;
-  animation: in 10s ease-in both;
+  animation: in 0.75s ease-in both;
 }
 .t3{
   top: 7vw;
   left: 30%;
-  animation: in 10s ease-in both;
+  animation: in 1.2s ease-in both;
 
 }
 @keyframes appear {
@@ -113,54 +114,6 @@ height: 553px;
 @keyframes in {
   0%{opacity: 0;}
   100%{opacity: 1;}
-}
-/* pacman */
-.pacm2 {
-  top: 30vw;
-  left: 40%;
-}
-.pacm1{
-  top: 30vw;
-  left: 50%;
-}
-.pacm {
-    position: absolute;
-    display: block;
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background: transparent;
-}
-.pacm:after, .pacm:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    border: 35px solid #FFCC00;
-}
-.pacm:before {
-    border-bottom-color: transparent;
-    animation: chunk-top .6s ease infinite;
-}
-.pacm:after {
-    border-right-color: transparent;
-    animation: chunk-bottom .6s ease infinite;
-}
-@keyframes chunk-top {
-  0%, 100% {
-    transform: rotate(-45deg);
-    }
-  50% {
-    transform: rotate(-80deg);
-    }
-}
-@keyframes chunk-bottom {
-  0%, 100% {
-    transform: rotate(-45deg);
-    }
-  50% {
-    transform: rotate(0deg);
-    }
 }
 /* navbar */
 .upper-nav{
@@ -410,7 +363,6 @@ display: inline-block;
 .projects{
   background-color: #f6f6f6;
   height: 1000px;
-  width: 812px;
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
@@ -418,5 +370,17 @@ display: inline-block;
   padding-top: 105px;
   margin: 0;
   opacity: 0;
+  font-size: 50px;
+}
+
+/* profiles */
+.profiles{
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.profileText{
+  padding-top: 105px;
+  margin: 0;
   font-size: 50px;
 }
